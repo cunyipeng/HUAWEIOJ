@@ -15,19 +15,19 @@
 int GetCount( char* strInValue )
 {
 	 if(strInValue == NULL)
-		  return 0;
+	     return 0;
 
 	 int map[127] = {0};
 	 int count = 0;
 	 while(*strInValue != '\0')
 	 {
-		  map[*strInValue]++;
-         strInValue++;
-   }
+	       map[*strInValue]++;
+               strInValue++;
+         }
 	 for(int i = 0; i < 127; i++)
 	 {
-		  if(map[i])
-			   count++;
+	       if(map[i])
+		  count++;
 	 }  
 	 return count;
 }
